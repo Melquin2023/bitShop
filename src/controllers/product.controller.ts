@@ -54,9 +54,9 @@ export const createProduct=  async(
         req: Express.Request, 
         res: Express.Response) => {
             try {
-              const productId = req.params.id;
-          
-              const deletedProduct = await productModel.findByIdAndDelete(productId);
+                let {_id} = req.body
+                      
+              const deletedProduct = await productModel.findByIdAndDelete(_id);
           
               if (!deletedProduct) {
                 return res.status(404).json({ msg: "Producto no encontrado" });

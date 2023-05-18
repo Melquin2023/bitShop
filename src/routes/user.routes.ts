@@ -16,7 +16,7 @@ router.delete("/delete", () => {});
 router.get("/getproduct", controller.product.getproduct);
 router.post("/createProduct", controller.product.createProduct);
 router.put("/updateProduct", controller.product.updateProduct);
-router.put("/deleteProduct", controller.product.deleteProduct);
+router.delete("/deleteProduct", controller.product.deleteProduct);
 // router.post("/login", controller.User.login)
 
 
