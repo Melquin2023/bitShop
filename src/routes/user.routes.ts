@@ -17,6 +17,7 @@ router.get("/getproduct", controller.product.getproduct);
 router.post("/createProduct", controller.product.createProduct);
 router.put("/updateProduct", controller.product.updateProduct);
 router.delete("/deleteProduct", controller.product.deleteProduct);
+router.post("/generateBill", controller.factura.generateBill);
 // router.post("/login", controller.User.login)
 
 

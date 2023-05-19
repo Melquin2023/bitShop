@@ -38,7 +38,7 @@ export const updateUser = async (
           const { username, email, dateBirth,} = req.body;
         
       
-          // Verificar si ya existe un usuario con el mismo nombre de usuario
+          // Verificar si no esta repetido el usuario
           const existingUsername = await userModel.findOne({ username });
       
           if (existingUsername) {
