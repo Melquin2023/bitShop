@@ -1,13 +1,13 @@
 import  Express  from "express";
 import { Router } from "express";
 import controller from "../controllers";
-import { createUser1 } from "../controllers/user.controller";
+import { createUser } from "../controllers/user.controller";
 import { getproduct } from "../controllers/product.controller";
 
 const router=Router()
 // crear un usuario
 
-router.post("/create", controller.User.createUser1);
+router.post("/create", controller.User.createUser);
 router.get("/getAll", controller.User.getUser);
 router.get("/getendpoint", controller.User.endpoint);
 router.put("/update", controller.User.updateUser);

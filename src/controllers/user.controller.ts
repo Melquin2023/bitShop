@@ -33,7 +33,7 @@ export const updateUser = async (
           }
     }
 
-    export const createUser1 = async (req: Express.Request, res: Express.Response) => {
+    export const createUser= async (req: Express.Request, res: Express.Response) => {
         try {
           const { username, email, dateBirth,} = req.body;
         

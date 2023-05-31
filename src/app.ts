@@ -2,6 +2,7 @@ import  Express  from "express";
 import dotenv from "dotenv";
 import apiRoutes from "./routes/index"
 import {connectDB} from "./database";
+import cors from "cors";
 
 // CREAR INSTANCIAS DE EXPRESS
 const app = Express()
@@ -18,6 +19,7 @@ const port=process.env.PORT || 3200
 
 //establecer usos de express
 app.use(Express.json())
+app.use(cors ({}))
 
 //establecer las rutas  a utilizar en el api
 app.use("/api", apiRoutes)
