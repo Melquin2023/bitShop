@@ -11,7 +11,7 @@ router.post("/create", controller.User.createUser);
 router.get("/getAll", controller.User.getUser);
 router.get("/getendpoint", controller.User.endpoint);
 router.put("/update", controller.User.updateUser);
-router.delete("/delete", () => {});
+router.delete("/delete/:_id",controller.User.deleteUser);
 
 router.get("/getproduct", controller.product.getproduct);
 router.post("/createProduct", controller.product.createProduct);
